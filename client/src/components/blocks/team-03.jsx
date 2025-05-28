@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { DribbbleIcon, TwitchIcon, TwitterIcon } from "lucide-react";
+import { LinkedinIcon, FacebookIcon, InstagramIcon } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const teamMembers = [
@@ -7,21 +7,35 @@ const teamMembers = [
     name: "Jhon Roy Ilao",
     title: "Role",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do.",
-    imageUrl: "/snoopy.jpeg"
+    imageUrl: "/snoopy.jpeg",
+    socials: {
+      linkedin: "https://www.linkedin.com/in/jhon-roy-ilao-3992b9293/",
+      facebook: "https://www.facebook.com/jhnroyilao/",
+      instagram: "https://www.instagram.com/jhcnroy/"
+    }
   },
   {
     name: "John Eric Samillano",
     title: "Role",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do",
-    imageUrl: "/snoopy.jpeg"
+    imageUrl: "/snoopy.jpeg",
+    socials: {
+      linkedin: "#",
+      facebook: "#",
+      instagram: "#"
+    }
   },
   {
     name: "Luis Miguel Dela Cruz",
     title: "Role",
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do",
-    imageUrl: "/snoopy.jpeg"
+    imageUrl: "/snoopy.jpeg",
+    socials: {
+      linkedin: "#",
+      facebook: "#",
+      instagram: "#"
+    }
   },
- 
 ];
 
 const Team03Page = () => {
@@ -34,7 +48,7 @@ const Team03Page = () => {
           Meet Our Team
         </h2>
         <p className="mt-4 text-base sm:text-lg">
-          Our dedicated team of professionals ensures smooth operation of CCIS laboratory facilities.
+        Built with care by fellow students to streamline your lab and equipment reservations.
         </p>
         <div className="mt-8 flex flex-col sm:flex-row-reverse sm:justify-end gap-3">
           <Button size="lg" className="bg-[#FF2E63] hover:bg-[#FF2E63]/90">Contact Us</Button>
@@ -56,18 +70,18 @@ const Team03Page = () => {
               <p className="mt-2 text-sm text-muted-foreground">{member.bio}</p>
               <div className="mt-4 flex items-center gap-2.5">
                 <Button className="bg-accent hover:bg-accent shadow-none" size="icon" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <TwitterIcon className="stroke-muted-foreground" />
+                  <a href={member.socials.linkedin} target="_blank" rel="noopener noreferrer">
+                    <LinkedinIcon className="stroke-muted-foreground h-5 w-5" />
                   </a>
                 </Button>
                 <Button className="bg-accent hover:bg-accent shadow-none" size="icon" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <DribbbleIcon className="stroke-muted-foreground" />
+                  <a href={member.socials.facebook} target="_blank" rel="noopener noreferrer">
+                    <FacebookIcon className="stroke-muted-foreground h-5 w-5" />
                   </a>
                 </Button>
                 <Button className="bg-accent hover:bg-accent shadow-none" size="icon" asChild>
-                  <a href="#" target="_blank" rel="noopener noreferrer">
-                    <TwitchIcon className="stroke-muted-foreground" />
+                  <a href={member.socials.instagram} target="_blank" rel="noopener noreferrer">
+                    <InstagramIcon className="stroke-muted-foreground h-5 w-5" />
                   </a>
                 </Button>
               </div>
