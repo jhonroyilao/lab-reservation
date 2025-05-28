@@ -31,9 +31,9 @@ const teamMembers = [
     bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do",
     imageUrl: "/snoopy.jpeg",
     socials: {
-      linkedin: "#",
-      facebook: "#",
-      instagram: "#"
+      linkedin: "https://www.linkedin.com/in/luismigueldlcrz",
+      facebook: "https://www.facebook.com/luismigueldlcrz",
+      instagram: "https://www.instagram.com/luismigueldlcrz/"
     }
   },
 ];
