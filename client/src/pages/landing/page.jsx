@@ -15,7 +15,7 @@ export default function LandingPage() {
           buttons={{
             primary: {
               text: "Get Started",
-              url: "/login"
+              url: "/onboarding"
             },
             secondary: {
               text: "Learn More",
